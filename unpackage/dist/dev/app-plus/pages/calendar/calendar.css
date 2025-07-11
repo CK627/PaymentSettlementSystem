@@ -1,0 +1,301 @@
+
+.calendar-container {
+	padding: 20px;
+}
+.header {
+	margin-bottom: 20px;
+}
+.title {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	display: block;
+}
+.month-stats {
+	background-color: #f0f9ff;
+	border-radius: 8px;
+	padding: 15px;
+	margin-bottom: 15px;
+	border-left: 4px solid #007AFF;
+}
+.stats-text {
+	display: block;
+	font-size: 14px;
+	color: #333;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+.calendar-controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.nav-button {
+	padding: 5px 10px;
+	font-size: 14px;
+	line-height: 1.5;
+	margin: 0;
+}
+.current-month {
+	font-size: 16px;
+	font-weight: bold;
+}
+.calendar {
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.weekdays {
+	display: flex;
+	background-color: #f8f8f8;
+}
+.weekday {
+	flex: 1;
+	text-align: center;
+	padding: 10px 0;
+	font-weight: bold;
+	color: #606266;
+}
+.days {
+	display: flex;
+	flex-wrap: wrap;
+}
+.day {
+	width: 14.28%;
+	height: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border-bottom: 1px solid #f0f0f0;
+	border-right: 1px solid #f0f0f0;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.day:nth-child(7n) {
+	border-right: none;
+}
+.day.empty {
+	background-color: #f9f9f9;
+}
+.day.today {
+	background-color: #e6f7ff;
+}
+.day.has-record {
+	font-weight: bold;
+	background-color: #ffebee;
+	color: #d32f2f;
+}
+.day.selected {
+	background-color: #007AFF;
+	color: white;
+	font-weight: bold;
+	border: 2px solid #0056b3;
+	box-shadow: 0 2px 8px rgba(0, 122, 255, 0.3);
+}
+.record-dot {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #d32f2f;
+	position: absolute;
+	bottom: 5px;
+}
+.day-records {
+	margin-top: 20px;
+}
+.records-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.section-title {
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+}
+.add-button {
+	margin: 0;
+}
+.record-item {
+	background-color: #f5f7fa;
+	border-radius: 8px;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+.record-time {
+	font-size: 14px;
+	color: #909399;
+	display: block;
+	margin-bottom: 5px;
+}
+.record-details {
+	margin-bottom: 10px;
+}
+.record-details uni-text {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+.record-actions {
+	display: flex;
+	gap: 10px;
+}
+.action-button {
+	margin: 0;
+	flex: 1;
+}
+.no-records {
+	text-align: center;
+	color: #909399;
+	padding: 20px 0;
+}
+.no-records uni-text {
+	display: block;
+	margin-bottom: 15px;
+}
+.no-records .add-button {
+	margin-top: 10px;
+}
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+.modal-content {
+	background-color: #fff;
+	border-radius: 8px;
+	width: 90%;
+	max-width: 500px;
+	max-height: 80%;
+	overflow: hidden;
+}
+.modal-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	border-bottom: 1px solid #f0f0f0;
+}
+.modal-title {
+	font-size: 16px;
+	font-weight: bold;
+}
+.close-button {
+	background: none;
+	border: none;
+	font-size: 20px;
+	color: #999;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.modal-body {
+	padding: 20px;
+}
+.form-item {
+	margin-bottom: 15px;
+}
+.label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #333;
+}
+.input {
+	width: 100%;
+	padding: 12px 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 16px;
+	box-sizing: border-box;
+	height: 40px;
+	padding: 8px 12px;
+	font-size: 16px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+.supplement-text {
+		color: red;
+		font-weight: bold;
+}
+.days-input-container {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.days-button {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: #007AFF;
+	color: white;
+	border: none;
+	font-size: 16px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	flex-shrink: 0;
+}
+.days-button:disabled {
+	background-color: #ccc;
+	color: #999;
+}
+.days-input {
+	flex: 1;
+	min-width: 80px;
+	padding: 8px 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+	box-sizing: border-box;
+	text-align: center;
+	height: 35px;
+}
+.modal-footer {
+	display: flex;
+	gap: 10px;
+	padding: 15px 20px;
+	border-top: 1px solid #f0f0f0;
+}
+.cancel-button {
+	flex: 1;
+	margin: 0;
+	background-color: #f5f5f5;
+	color: #666;
+}
+.save-button {
+	flex: 1;
+	margin: 0;
+}
+.message {
+	text-align: center;
+	margin-top: 20px;
+}
+.message-text {
+	font-size: 14px;
+}
+.success {
+	color: #67C23A;
+}
+.error {
+	color: #F56C6C;
+}

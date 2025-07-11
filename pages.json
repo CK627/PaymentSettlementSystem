@@ -1,0 +1,53 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "记账"
+			}
+		},
+		{
+			"path" : "pages/date/date",
+			"style" : 
+			{
+				"navigationBarTitleText" : "数据统计"
+			}
+		},
+		{
+			"path" : "pages/calendar/calendar",
+			"style" : 
+			{
+				"navigationBarTitleText" : "日历"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "记账",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/Accounting/Accounting_head.png",
+			"selectedIconPath": "static/Accounting/Accounting_end.png",
+			"text": "记账"
+		}, {
+			"pagePath": "pages/date/date",
+			"iconPath": "static/date/date_head.png",
+			"selectedIconPath": "/static/date/date_end.png",
+			"text": "数据统计"
+		}, {
+			"pagePath": "pages/calendar/calendar",
+			"iconPath": "/static/calendar/calendar_head.png",
+			"selectedIconPath": "/static/calendar/calendar_end.png",
+			"text": "日历"
+		}]
+	},
+	"uniIdRouter": {}
+}
